@@ -1,7 +1,7 @@
 @echo off
 cls
 set TYPE=%1
-if "%TYPE%" equ "CMD" (
+if "%TYPE%" == "CMD" (
 	echo "Building CMD Version"
 	make -j -f cmdmake.makefile
 	if %errorlevel% neq 0 (
@@ -11,7 +11,9 @@ if "%TYPE%" equ "CMD" (
 		CMDDriver.exe
 	)
 )
-if "%TYPE%" equ "GUI" (
+set NEWPATH=%PATH%;%CD%\SDL2\bin
+set PATH=%NEWPATH%;
+if "%TYPE%" == "GUI" (
 	echo "Building GUI Version"
 	make -j -f guimake.makefile
 	if %errorlevel% neq 0 (

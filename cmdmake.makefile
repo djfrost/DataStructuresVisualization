@@ -1,5 +1,5 @@
 AutomatedMakefile = am
-CC = g++ -std=c++11
+CC = g++
 
 INC_DIRS=-I./
 LIB_DIRS=-L./
