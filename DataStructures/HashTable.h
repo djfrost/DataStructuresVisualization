@@ -3,6 +3,11 @@
 #include <iostream>
 #include <string>
 /*
+	Note: The current version does not support chaining. Collisions
+	at this point in time are being ignored. In a future push this
+	will be taken care of.
+*/
+/*
 	HashEntry:
 		Represents a key, value pair. Keys are in the form of strings,
 		and values can be in the form of any data type. Note that the
