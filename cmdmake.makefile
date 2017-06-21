@@ -1,8 +1,8 @@
 AutomatedMakefile = am
 CC = g++
 
-INC_DIRS=-I./
-LIB_DIRS=-L./
+INC_DIRS=-I./ -I./DataStructures
+LIB_DIRS=-L./ -L./DataStructures
 LIBS=
 
 COMPILE = $(CC) $(INC_DIRS) -c
@@ -13,5 +13,5 @@ all: CMDDriver
 CMDDriver: $(FILES)
 			$(LINK) CMDDriver.exe $(FILES) $(LIBS)
 
-CommandDriver.o: CommandDriver.cpp
+CommandDriver.o: CommandDriver.cpp DataStructures/HashTable.h
 			$(COMPILE) CommandDriver.cpp
