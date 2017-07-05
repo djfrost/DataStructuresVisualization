@@ -13,5 +13,5 @@ all: CMDDriver
 CMDDriver: $(FILES)
 			$(LINK) CMDDriver.exe $(FILES) $(LIBS)
 
-CommandDriver.o: CommandDriver.cpp DataStructures/HashTable.h
+CommandDriver.o: CommandDriver.cpp DataStructures/HashTable.h DataStructures/Stack.h
 			$(COMPILE) CommandDriver.cpp

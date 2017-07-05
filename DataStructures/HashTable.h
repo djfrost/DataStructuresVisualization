@@ -1,6 +1,5 @@
 #ifndef HASHTABLE_H
 #define HASHTABLE_H
-#include <iostream>
 #include <string>
 /*
 	Note: The current version does not support chaining. Collisions
